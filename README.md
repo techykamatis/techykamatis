@@ -21,7 +21,20 @@ intentionally sparse. For full experience, projects, and references:
 **Recent:** LLM integration · RAG · agentic systems · Kubernetes · AWS (EKS / EC2 / S3 / IAM) · Docker · CI/CD · testing
 **Earlier:** PHP · Laravel · React · MySQL · J2EE · C# / CUDA
 
-### Selected project
-**Candice — Family AI System (2026)** · A production multi-agent AI assistant with
-long-term memory, proactive triggers, and per-user persona tuning, built on a custom
-LLM orchestration layer.
+### Selected project — Candice, a Family AI System (2026)
+
+An always-on, local-first AI butler I built for my family. It lives in iMessage,
+keeps a separate long-term memory and persona per person, and reaches out
+proactively (morning briefs, weekly digests, anomaly nudges) rather than waiting
+to be asked.
+
+**Architecture & write-up →** https://evcandice.github.io/candice/ · **Case study →** https://github.com/techykamatis/candice
+
+- **Local-first** — models, memory, and media processing run on a home Mac; only
+  message text touches an external LLM API
+- **Memory** — per-person vector namespaces (mem0 + Chroma) with local embeddings
+  and fact extraction via Ollama (nomic-embed-text, qwen3:4b)
+- **Proactive engine** — asyncio trigger loop with cooldowns, muting, anti-spam
+- **Agentic & self-maintaining** — sandboxed task runner; nightly test-gated
+  self-update with automatic rollback
+- **Stack** — Python · FastAPI · asyncio · mem0 · Chroma · Ollama · Next.js · SQLite (WAL) · launchd
