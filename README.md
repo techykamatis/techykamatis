@@ -8,7 +8,6 @@ Most of my code lives in **private enterprise repositories**, so this profile is
 intentionally sparse. For full experience, projects, and references:
 
 - 💼 LinkedIn: https://linkedin.com/in/vhenjoseph
-- ✉️ vhenjoseph@gmail.com
 - 📍 Kuala Lumpur, Malaysia
 
 ### What I do
