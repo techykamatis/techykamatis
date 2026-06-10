@@ -20,12 +20,12 @@ intentionally sparse. For full experience, projects, and references:
 **Recent:** LLM integration · RAG · agentic systems · Kubernetes · AWS (EKS / EC2 / S3 / IAM) · Docker · CI/CD · testing
 **Earlier:** PHP · Laravel · React · MySQL · J2EE · C# / CUDA
 
-### Selected project — Candice, a Family AI System (2026)
+### Hero project — Candice, a Family AI System (2026)
 
-An always-on, local-first AI butler I built for my family. It lives in iMessage,
-keeps a separate long-term memory and persona per person, and reaches out
-proactively (morning briefs, weekly digests, anomaly nudges) rather than waiting
-to be asked.
+An always-on, local-first AI system I built for my family. It lives in iMessage, keeps a separate long-term memory and persona per person, and reaches out proactively (morning briefs, weekly digests, anomaly nudges) rather than waiting to be asked. 
+
+Two questions come up whenever I describe Candice: why build her instead of running an off-the-shelf agent, and why bury her in iMessage. Both were deliberate. Both are answered in Candice's page.
+
 
 **Architecture & write-up →** https://evcandice.github.io/candice/ · **Case study →** https://github.com/techykamatis/candice
 
